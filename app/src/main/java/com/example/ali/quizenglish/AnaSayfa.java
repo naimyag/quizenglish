@@ -5,14 +5,12 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
-public class AnaSayfa extends AppCompatActivity implements View.OnClickListener {
-
-    //hobaa
-    //hobala
+public class AnaSayfa extends AppCompatActivity implements View.OnClickListener, View.OnTouchListener {
 
     Button btnOyun;
     Button btnYarisma;
@@ -31,14 +29,10 @@ public class AnaSayfa extends AppCompatActivity implements View.OnClickListener 
         btnSerbestCalisma.setOnClickListener(this);
         btnOgrendiklerim.setOnClickListener(this);
 
-   //    btnOyun.setOnClickListener(new View.OnClickListener() {
-   //        @Override
-   //        public void onClick(View v) {
-   //            Intent intent = new Intent(AnaSayfa.this, MenuZorluk.class);
-   //            startActivity(intent);
-   //        }
-   //    });
-
+        btnOyun.setOnTouchListener(this);
+        btnYarisma.setOnTouchListener(this);
+        btnSerbestCalisma.setOnTouchListener(this);
+        btnOgrendiklerim.setOnTouchListener(this);
     }
 
 
@@ -89,5 +83,44 @@ public class AnaSayfa extends AppCompatActivity implements View.OnClickListener 
                 break;
         }
 
+    }
+
+    @Override
+    public boolean onTouch(View view, MotionEvent motionEvent) {
+
+        switch (view.getId())
+        {
+            case R.id.btnOyun:
+                if(motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                    btnOyun.setBackgroundResource(R.drawable.buttonontouch);
+                } else if(motionEvent.getAction() == MotionEvent.ACTION_UP) {
+                    btnOyun.setBackgroundResource(R.drawable.buton);
+                }
+                break;
+            case R.id.btnYarisma:
+                if(motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                    btnYarisma.setBackgroundResource(R.drawable.buttonontouch);
+                } else if(motionEvent.getAction() == MotionEvent.ACTION_UP) {
+                    btnYarisma.setBackgroundResource(R.drawable.buton);
+                }
+                break;
+            case R.id.btnSerbestCalisma:
+                if(motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                    btnSerbestCalisma.setBackgroundResource(R.drawable.buttonontouch);
+                } else if(motionEvent.getAction() == MotionEvent.ACTION_UP) {
+                    btnSerbestCalisma.setBackgroundResource(R.drawable.buton);
+                }
+                break;
+            case R.id.btnOgrendiklerim:
+                if(motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                    btnOgrendiklerim.setBackgroundResource(R.drawable.buttonontouch);
+                } else if(motionEvent.getAction() == MotionEvent.ACTION_UP) {
+                    btnOgrendiklerim.setBackgroundResource(R.drawable.buton);
+                }
+                break;
+        }
+
+
+        return false;
     }
 }
