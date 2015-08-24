@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ali.quizenglish" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".AnaSayfa"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.ali.quizenglish.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MenuZorluk"
+            android:label="Zorluk" >
+        </activity>
+        <activity
+            android:name=".GridBolumler"
+            android:label="@string/title_activity_grid_bolumler" >
+        </activity>
+        <activity
+            android:name=".SoruActivity"
+            android:label="@string/title_activity_soru" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,56 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+
+    android:background="@drawable/zemin"
+    android:orientation="vertical"
+    android:id="@+id/anamenu">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="193dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/logo" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="OYUN"
+        android:id="@+id/btnOyun"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/buton"
+        android:textColor="#f4801f" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="YARIŞMA"
+        android:id="@+id/btnYarisma"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/buton"
+        android:textColor="#f4801f" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="SERBEST ÇALIŞMA"
+        android:id="@+id/btnSerbestCalisma"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/buton"
+        android:textColor="#f4801f"
+        />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="ÖĞRENDİKLERİM"
+        android:id="@+id/btnOgrendiklerim"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/buton"
+        android:textColor="#f4801f" />
+</LinearLayout>
