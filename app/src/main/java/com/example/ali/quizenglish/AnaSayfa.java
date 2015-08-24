@@ -12,6 +12,9 @@ import android.widget.LinearLayout;
 
 public class AnaSayfa extends AppCompatActivity implements View.OnClickListener, View.OnTouchListener {
 
+    //sesimi duyan varmııııı
+    //laptop** sesimi duyan vaaaar
+
     Button btnOyun;
     Button btnYarisma;
     Button btnSerbestCalisma;
