@@ -11,9 +11,6 @@ import android.widget.LinearLayout;
 
 public class AnaSayfa extends AppCompatActivity implements View.OnClickListener {
 
-    //hobaa
-    //hobala
-
     Button btnOyun;
     Button btnYarisma;
     Button btnSerbestCalisma;
