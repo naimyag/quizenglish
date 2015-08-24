@@ -1,17 +1,10 @@
 package com.example.ali.quizenglish;
 
-import android.app.Activity;
 import android.app.ActivityOptions;
 import android.content.Intent;
-import android.content.res.ColorStateList;
-import android.graphics.Color;
-import android.graphics.PorterDuff;
 import android.graphics.Typeface;
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -48,6 +41,7 @@ public class MenuZorluk extends AppCompatActivity implements View.OnClickListene
         frmKolay.setOnClickListener(this);
         frmNormal.setOnClickListener(this);
         frmZor.setOnClickListener(this);
+
         frmKolay.setOnTouchListener(this);
         frmNormal.setOnTouchListener(this);
         frmZor.setOnTouchListener(this);
