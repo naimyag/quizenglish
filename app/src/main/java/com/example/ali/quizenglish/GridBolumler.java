@@ -1,15 +1,15 @@
 package com.example.ali.quizenglish;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
 public class GridBolumler extends AppCompatActivity {
+
+    //asdf
 
     private GridView pnlGrid;
     private Bolumler bolumler;
