@@ -12,7 +12,6 @@ import android.widget.LinearLayout;
 public class AnaSayfa extends AppCompatActivity implements View.OnClickListener {
 
     //ok mi he
-	//oraya in
     
     Button btnOyun;
     Button btnYarisma;
